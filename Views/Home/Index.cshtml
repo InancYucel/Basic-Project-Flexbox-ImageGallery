@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+
+        *
+        {
+            box-sizing: border-box;
+        }
+       body
+       {
+           margin:0;
+       }
+
+       .header
+       {
+           text-align: center;
+           padding: 40px;
+       }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap; /*Sığdırmaya çalışmasını engellememiz lazım*/
+            padding: 0 5px;
+        }
+
+        .column {
+            flex: 25%;
+            flex-wrap: wrap;
+            max-width: 25%;
+            padding: 0 5px;
+        }
+
+        .column img
+        {
+            margin-top: 6px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @@media screen and (max-width:800px)
+        {
+            .column
+            {
+                flex:50%;
+                max-width:50%;
+            }
+        }
+
+        @@media screen and (max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+
+        <h1>Flexbox ile Image Gallery</h1>
+        <p>Flexbox kullanımı</p>
+
+    </div>
+
+
+    <div class="row">
+
+        <div class="column">
+            <img src="~/Images/Images/1.jpg" />
+            <img src="~/Images/Images/2.jpg" />
+            <img src="~/Images/Images/3.jpg" />
+            <img src="~/Images/Images/4.jpg" />
+            <img src="~/Images/Images/5.jpg" />
+            <img src="~/Images/Images/6.jpg" />
+
+        </div>
+
+
+        <div class="column">
+            <img src="~/Images/Images/7.jpg" />
+            <img src="~/Images/Images/8.jpg" />
+            <img src="~/Images/Images/9.jpg" />
+            <img src="~/Images/Images/10.jpg" />
+            <img src="~/Images/Images/11.jpg" />
+            <img src="~/Images/Images/12.jpg" />
+        </div>
+
+
+        <div class="column">
+            <img src="~/Images/Images/13.jpg" />
+            <img src="~/Images/Images/14.jpg" />
+            <img src="~/Images/Images/15.jpg" />
+            <img src="~/Images/Images/16.jpg" />
+            <img src="~/Images/Images/17.jpg" />
+            <img src="~/Images/Images/18.jpg" />
+        </div>
+
+
+        <div class="column">
+            <img src="~/Images/Images/19.jpg" />
+            <img src="~/Images/Images/20.jpg" />
+            <img src="~/Images/Images/21.jpg" />
+            <img src="~/Images/Images/22.jpg" />
+            <img src="~/Images/Images/23.jpg" />
+            <img src="~/Images/Images/24.jpg" />
+        </div>
+
+    </div>
+</body>
+</html>
